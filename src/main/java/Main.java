@@ -56,6 +56,10 @@ public class Main {
                 .build();
         HttpResponse<String> httpResponse = httpClient.send(httpRequestCreateSubscription, HttpResponse.BodyHandlers.ofString());
         System.out.println(httpResponse.body());
+        Map<String, String> map = new HashMap<>();
+        map.put("reason", "Not satisfied with the service");
+
+
 
     }
 }
